@@ -1,0 +1,90 @@
+* {
+  background-color: black;
+  /*border: 1px solid tomato;*/
+}
+
+
+canvas {
+  border: 1px solid tomato;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#topButton {
+  border-color: tomato;
+  border-style: dashed;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: tomato;
+  height: 50px;
+  width: 600px;
+  animation: type 4s steps(60, end);
+}
+
+#topText span{
+  position: relative;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: tomato;
+  height: 50px;
+  width: 0; /* Start with the text hidden */
+  animation: type 4s steps(60, end);
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 600px; /* Animate the text to its full width */
+  }
+}
+
+#topButton:hover {
+  /*
+  background: repeating-linear-gradient(
+  45deg,
+  rgb(214, 83, 60),
+  rgb(214, 83, 60) 5px,
+  black 5px,
+  black 10px
+  */
+  background-color: tomato;
+
+}
+
+#topButton:hover span {
+  font-weight: bold;
+  background-color: tomato;
+  color: black;
+}
+
+#list {
+  position: absolute;
+  background: none;
+  color: tomato;
+  top: 200px;
+  left: 50px;
+}
+
+#list li {
+  background: none;
+  margin: 10px;
+  color: tomato;
+}
+
+a {
+  text-decoration: none;
+  background: none;
+  color: tomato;
+}
+
+a:hover {
+  font-weight: bold;
+}
